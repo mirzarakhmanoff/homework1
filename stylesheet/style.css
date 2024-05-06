@@ -1,0 +1,192 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  color: #ffffff;
+  background: #181818;
+  font-family: "Space Grotesk", sans-serif;
+}
+@media screen and (width <= 600px) {
+  body {
+    font-size: 1.4rem;
+  }
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+h1 {
+  font-size: 8rem;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 5.2rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+header {
+  max-width: 1097px;
+  margin: 0 auto 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3.4rem 3.9rem;
+}
+header .logo {
+  width: 18.6rem;
+}
+header ul {
+  display: flex;
+  list-style: none;
+  gap: 3rem;
+}
+header ul a {
+  padding: 1rem;
+}
+header > div {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+header button {
+  width: 6.6rem;
+  padding: 1.3rem 1.1rem;
+  background: transparent;
+  border: none;
+  display: none;
+}
+@media screen and (width <= 870px) {
+  header ul {
+    display: none;
+  }
+  header button {
+    display: initial;
+  }
+}
+
+.action-link {
+  font-size: 1.7rem;
+  line-height: 1.5;
+  border: solid;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.action-link--l {
+  padding: 2rem 4rem;
+}
+
+.action-link--m {
+  padding: 1.35rem 4.6rem;
+}
+@media screen and (width <= 550px) {
+  .action-link--m {
+    font-size: 1.5rem;
+    padding: 1rem 3.6rem;
+  }
+}
+
+.paragraph--l {
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+.paragraph--m {
+  font-size: 1.6rem;
+  line-height: 1.25;
+}
+
+.hero {
+  margin-bottom: 16.2rem;
+}
+.hero__top {
+  max-width: 729px;
+  margin: 0 auto 3.5rem;
+  text-align: center;
+  padding-inline: 5rem;
+}
+.hero h1 {
+  margin-bottom: 1.7rem;
+}
+.hero p {
+  margin-bottom: 9.5rem;
+}
+.hero__button-wrapper {
+  display: flex;
+  gap: 3.5rem;
+  justify-content: center;
+}
+.hero__button-wrapper button:first-child {
+  background: #4452fe;
+  border: #4452fe;
+}
+.hero__button-wrapper button:last-child {
+  background: transparent;
+}
+@media screen and (width <= 549px) {
+  .hero__button-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.features {
+  text-align: center;
+  margin-bottom: 21.2rem;
+}
+.features h2 {
+  margin-bottom: 2.7rem;
+}
+.features > div {
+  max-width: 108.8rem;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 30.9rem;
+  row-gap: 4rem;
+}
+@media screen and (width <= 700px) {
+  .features > div {
+    grid-template-columns: 1fr;
+    padding-inline: 5rem;
+  }
+}
+.features > p {
+  max-width: 60.2rem;
+  margin: 0 auto 8rem;
+}
+.features ul li {
+  list-style: none;
+  text-align: left;
+  margin-bottom: 5.2rem;
+}
+.features ul li > div {
+  display: flex;
+  gap: 1.3rem;
+  margin-bottom: 2rem;
+}
+.features ul li > div h3 {
+  max-width: 17.3rem;
+}
+.features ul li img {
+  width: 2.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */

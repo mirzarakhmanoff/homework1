@@ -1,0 +1,221 @@
+$primary: #4452fe;
+$secondary: #02e4c0;
+$dark-blue: #112d57;
+$primary-text: #ffffff;
+$dark-text: #000000;
+$secondary-text: #5c5c5c;
+$dark-background: #181818;
+$light-background: #ffffff;
+
+$space-grotesk: "Space Grotesk", sans-serif;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; // 1rem = 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  color: $primary-text;
+  background: $dark-background;
+  font-family: $space-grotesk;
+
+  @media screen and (width <= 600px) {
+    font-size: 1.4rem;
+  }
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+h1 {
+  font-size: 8rem;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 5.2rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+header {
+  max-width: 1097px;
+  margin: 0 auto 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3.4rem 3.9rem;
+
+  .logo {
+    width: 18.6rem;
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+
+    a {
+      padding: 1rem;
+    }
+  }
+
+  & > div {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+  }
+
+  button {
+    width: 6.6rem;
+    padding: 1.3rem 1.1rem;
+    background: transparent;
+    border: none;
+    display: none;
+  }
+
+  @media screen and (width <= 870px) {
+    ul {
+      display: none;
+    }
+
+    button {
+      display: initial;
+    }
+  }
+}
+
+.action-link {
+  font-size: 1.7rem;
+  line-height: 1.5;
+  border: solid;
+  text-decoration: none;
+  color: $primary-text;
+}
+
+.action-link--l {
+  padding: 2rem 4rem;
+}
+
+.action-link--m {
+  padding: 1.35rem 4.6rem;
+
+  @media screen and (width <= 550px) {
+    font-size: 1.5rem;
+    padding: 1rem 3.6rem;
+  }
+}
+
+.paragraph--l {
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+.paragraph--m {
+  font-size: 1.6rem;
+  line-height: 1.25;
+}
+
+.hero {
+  margin-bottom: 16.2rem;
+
+  &__top {
+    max-width: 729px;
+    margin: 0 auto 3.5rem;
+    text-align: center;
+    padding-inline: 5rem;
+  }
+
+  h1 {
+    margin-bottom: 1.7rem;
+  }
+
+  p {
+    margin-bottom: 9.5rem;
+  }
+
+  &__button-wrapper {
+    display: flex;
+    gap: 3.5rem;
+    justify-content: center;
+
+    button:first-child {
+      background: $primary;
+      border: $primary;
+    }
+
+    button:last-child {
+      background: transparent;
+    }
+
+    @media screen and (width <= 549px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+.features {
+  text-align: center;
+  margin-bottom: 21.2rem;
+
+  h2 {
+    margin-bottom: 2.7rem;
+  }
+
+  & > div {
+    max-width: 108.8rem;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 30.9rem;
+    row-gap: 4rem;
+
+    @media screen and (width <= 700px) {
+      grid-template-columns: 1fr;
+      padding-inline: 5rem;
+    }
+  }
+
+  & > p {
+    max-width: 60.2rem;
+    margin: 0 auto 8rem;
+  }
+
+  // ul {
+  //   display: flex;
+  // }
+
+  ul li {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 5.2rem;
+
+    & > div {
+      display: flex;
+      gap: 1.3rem;
+      margin-bottom: 2rem;
+
+      h3 {
+        max-width: 17.3rem;
+      }
+    }
+
+    img {
+      width: 2.5rem;
+    }
+  }
+}
