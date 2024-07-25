@@ -1,128 +1,375 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Figma land</title>
+    <style>
+      .li a {
+        text-decoration: none;
+        color: #fff;
+        cursor: pointer;
+        font-size: 2rem;
+      }
+    </style>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Figma land</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./stylesheet/style.css" />
+  </head>
 
-  <link rel="stylesheet" href="./stylesheet/style.css">
+  <body>
+    <header>
+      <a href="#" class="logo">
+        <img src="./img/logo.png" alt="logo" />
+      </a>
 
-</head>
-
-<body>
-  <header>
-    <a href="#" class="logo">
-      <img src="./img/logo.png" alt="logo">
-    </a>
-
-    <nav>
-      <ul>
-        <li><a herf="#">Home</a></li>
-        <li><a herf="#">Product</a></li>
-        <li><a herf="#">About</a></li>
-        <li><a herf="#">Contact</a></li>
-      </ul>
-    </nav>
-
-    <div>
-      <a href="/login" class="action-link action-link--m">Login</a>
-
-      <button>
-        <img src="./img/icons/menu.svg" alt="menu">
-      </button>
-    </div>
-  </header>
-
-  <main>
-    <article class="hero">
-      <div class="hero__top">
-
-        <h1>
-          Work at the speed
-          of thought
-        </h1>
-
-        <p class="paragraph--l">Most calendars are designed for teams. Slate is designed for freelancers who want a
-          simple way to plan their
-          schedule.</p>
-
-        <div class="hero__button-wrapper">
-          <button class="action-link action-link--l">Try For Free</button>
-          <button class="action-link action-link--l">Learn More</button>
-        </div>
-
-      </div>
-      <div class="hero__bottom">
-        <img src="./img/screens.png" alt="screens">
-      </div>
-    </article>
-
-    <article class="features">
-      <h2>Features</h2>
-
-      <p>
-        Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to plan their
-        schedule.
-      </p>
+      <nav>
+        <ul>
+          <li class="li">
+            <a herf="">Home</a>
+          </li>
+          <li class="li"><a herf="./admin/admin.html">Admin</a></li>
+        </ul>
+      </nav>
 
       <div>
-        <picture>
-          <source media="(min-width: 600px)" srcset="./img/frames.png">
-          <source media="(max-width: 600px)" srcset="./img/frames-small.png">
-          <img src="./img/frames.png" alt="frames">
-        </picture>
+        <a
+          href="./login/index — копия.html"
+          class="action-link action-link--m hero-button"
+          >Login</a
+        >
 
-        <ul>
-          <li>
-            <div>
-              <img src="./img/icons/spoon_knife.svg" alt="spoon and knife">
-              <h3>A single source
-                of truth</h3>
-            </div>
-
-            <p>When you add work to your
-              Slate calendar we automatically
-              calculate useful insights
-            </p>
-          </li>
-
-          <li>
-            <div>
-              <img src="./img/icons/spoon_knife.svg" alt="spoon and knife">
-              <h3>A single source
-                of truth</h3>
-            </div>
-
-            <p>When you add work to your
-              Slate calendar we automatically
-              calculate useful insights
-            </p>
-          </li>
-
-          <li>
-            <div>
-              <img src="./img/icons/spoon_knife.svg" alt="spoon and knife">
-              <h3>A single source
-                of truth</h3>
-            </div>
-
-            <p>When you add work to your
-              Slate calendar we automatically
-              calculate useful insights
-            </p>
-          </li>
-
-        </ul>
+        <button>
+          <img src="./img/icons/menu.svg" alt="menu" />
+        </button>
       </div>
-    </article>
-  </main>
+    </header>
 
-  <footer></footer>
-</body>
+    <main>
+      <article class="hero">
+        <div class="hero__top">
+          <h1>Work at the speed of thought</h1>
 
+          <p class="paragraph--l">
+            Most calendars are designed for teams. Slate is designed for
+            freelancers who want a simple way to plan their schedule.
+          </p>
+
+          <div class="hero__button-wrapper">
+            <a
+              href="./admin/admin.html"
+              class="action-link action-link--l admin-btn"
+              style="background-color: #4452fe"
+              >Admin</a
+            >
+            <a
+              href="./login/index — копия.html"
+              class="action-link action-link--l"
+              >Login</a
+            >
+          </div>
+        </div>
+        <div class="hero__bottom">
+          <img src="./img/screens.png" alt="screens" />
+        </div>
+      </article>
+
+      <article class="features">
+        <h2>Features</h2>
+
+        <p>
+          Most calendars are designed for teams. Slate is designed for
+          freelancers who want a simple way to plan their schedule.
+        </p>
+
+        <div>
+          <picture>
+            <source media="(min-width: 600px)" srcset="./img/frames.png" />
+            <source
+              media="(max-width: 600px)"
+              srcset="./img/frames-small.png"
+            />
+            <img src="./img/frames.png" alt="frames" />
+          </picture>
+
+          <ul>
+            <li>
+              <div>
+                <img src="./img/icons/spoon_knife.svg" alt="spoon and knife" />
+                <h3>A single source of truth</h3>
+              </div>
+
+              <p>
+                When you add work to your Slate calendar we automatically
+                calculate useful insights
+              </p>
+            </li>
+
+            <li>
+              <div>
+                <img src="./img/icons/spoon_knife.svg" alt="spoon and knife" />
+                <h3>A single source of truth</h3>
+              </div>
+
+              <p>
+                When you add work to your Slate calendar we automatically
+                calculate useful insights
+              </p>
+            </li>
+
+            <li>
+              <div>
+                <img src="./img/icons/spoon_knife.svg" alt="spoon and knife" />
+                <h3>A single source of truth</h3>
+              </div>
+
+              <p>
+                When you add work to your Slate calendar we automatically
+                calculate useful insights
+              </p>
+            </li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="contents">
+        <h2>Contents</h2>
+        <p>
+          We focus on ergonomics and meeting you where you work. <br />
+          It's only a keystroke away.
+        </p>
+        <div class="card-wrapper">
+          <div class="card">
+            <h6>Work</h6>
+            <p>
+              Ever wondered if you're too reliant on a client for work? Slate
+              helps you identify .
+            </p>
+            <a href="#" class="action-link action-link--m">Sign Up</a>
+            <img src="./img/Macbook Pro.png" alt="" />
+          </div>
+          <div class="card">
+            <h6>Design with real data</h6>
+            <p>
+              Ever wondered if you're too reliant on a client for work? Slate
+              helps you identify .
+            </p>
+            <a href="#" class="action-link action-link--m">Try For Free</a>
+            <img src="./img/notification.png" alt="" />
+          </div>
+        </div>
+      </article>
+      <section class="gallery">
+        <h2>Gallery</h2>
+        <p>
+          We focus on ergonomics and meeting you where you work. <br />
+          It's only a keystroke away.
+        </p>
+        <div class="gallery-items">
+          <img src="./img/images1.png" alt="" />
+          <picture>
+            <source media="(min-width:549px)" srcset="./img/images2.png" />
+            <source media="(max-width:549px)" srcset="./img/alterImg1.png" />
+            <img src="./img/bigBg.png" />
+          </picture>
+          <picture>
+            <source media="(min-width:549px)" srcset="./img/images3.png" />
+            <source media="(max-width:549px)" srcset="./img/alterImg2.png" />
+            <img src="./img/bigBg.png" />
+          </picture>
+          <picture>
+            <source media="(min-width:549px)" srcset="./img/images4.png" />
+            <source media="(max-width:549px)" srcset="./img/alterImg3.png" />
+            <img src="./img/bigBg.png" />
+          </picture>
+        </div>
+        <div class="gallery-item">
+          <img src="./img/images5.png" alt="" />
+          <img src="./img/images6.png" alt="" />
+          <img src="./img/images7.png" alt="" />
+        </div>
+        <a href="#" class="action-link--m action-link">See More</a>
+      </section>
+
+      <section class="partners">
+        <h2>Partners</h2>
+        <p>
+          We focus on ergonomics and meeting you where you work. <br />
+          It's only a keystroke away.
+        </p>
+        <div class="partners-logo">
+          <img src="img/icons/partners1.png" alt="" />
+          <img src="img/icons/partners2.png" alt="" />
+          <img src="img/icons/partners3.png" alt="" />
+          <img src="img/icons/partners4.png" alt="" />
+          <img src="img/icons/partners5.png" alt="" />
+          <img src="img/icons/partners6.png" alt="" />
+        </div>
+
+        <a href="#" class="action-link action-link--m">All Partners</a>
+      </section>
+
+      <section class="testimonials">
+        <h2>Testimonials</h2>
+        <div class="test-items">
+          <div class="test-item">
+            <div class="test-header">
+              <img src="./img/avatar1.png" alt="" />
+              <h6>
+                Claire Bell <br />
+                Designer
+              </h6>
+            </div>
+            <div class="test-text">
+              <p>
+                Slate helps you see how many more days you need to work to reach
+                your financial goal for the month and year. Slate helps you see
+                how many more days you need to work to reach your financial goal
+                for the month and year.your financial goal for the month and
+                year.
+              </p>
+            </div>
+          </div>
+          <div class="test-item">
+            <div class="test-header">
+              <img src="./img/avatar2.png" alt="" />
+              <h6>
+                Francisco Lane <br />
+                Designer
+              </h6>
+            </div>
+            <div class="test-text">
+              <p>
+                Slate helps you see how many more days you need to work to reach
+                your financial goal for the month and year. Slate helps you see
+                how many more days you need to work to reach your financial goal
+                for the month and year.
+              </p>
+            </div>
+          </div>
+          <div class="test-item">
+            <div class="test-header">
+              <img src="./img/avatar3.png" alt="" />
+              <h6>
+                Ralph Fisher <br />
+                Designer
+              </h6>
+            </div>
+            <div class="test-text">
+              <p>
+                Slate helps you see how many more days you need to work to reach
+                your financial goal for the month and year. Slate helps you see
+                how many more days you need to work to reach your financial goal
+                for the month and year.
+              </p>
+            </div>
+          </div>
+          <div class="test-item">
+            <div class="test-header">
+              <img src="./img/avatar4.png" alt="" />
+              <h6>
+                Jorge Murphy <br />
+                Designer
+              </h6>
+            </div>
+            <div class="test-text">
+              <p>
+                Slate helps you see how many more days you need to work to reach
+                your financial goal for the month and year. Slate helps you see
+                how many more days you need to work to reach your financial goal
+                for the month and year.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="openType">
+        <div class="openType-text">
+          <h3>OpenType features and Variable fonts</h3>
+          <a href="#">Try for free</a>
+        </div>
+        <div class="openType-img">
+          <picture>
+            <source
+              media="(min-width: 600px)"
+              srcset="./img/Line Chart 1.png"
+            />
+            <source
+              media="(max-width: 600px)"
+              srcset="img/Line Chart 1 (1).png"
+            />
+            <img src="./img/Line Chart 1.png" alt="frames" />
+          </picture>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-items">
+        <div class="footer-item">
+          <ul>
+            <li>
+              <span><a href="#">Fingertipe</a></span>
+            </li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Examples</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Updates</a></li>
+          </ul>
+        </div>
+        <div class="footer-item">
+          <ul>
+            <li>
+              <span><a href="#">Fingertipe</a></span>
+            </li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Examples</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Updates</a></li>
+          </ul>
+        </div>
+        <div class="footer-item">
+          <ul>
+            <li>
+              <span><a href="#">Fingertipe</a></span>
+            </li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Examples</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Updates</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-socials">
+        <div class="socials-item">
+          <img src="./img/icons/footer1.png" alt="" />
+          <a href="#">7480 Mockingbird Hill undefined</a>
+        </div>
+        <div class="socials-item">
+          <img src="./img/icons/footer2.png" alt="" />
+          <a href="tel:+(239) 555-0108">(239) 555-0108</a>
+        </div>
+        <div class="social-icons">
+          <a href="#">
+            <img src="./img/icons/footer3.png" alt="" />
+          </a>
+          <a href="#">
+            <img src="./img/icons/footer4.png" alt="" />
+          </a>
+          <a href="#">
+            <img src="./img/icons/footer5.png" alt="" />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+  </body>
 </html>

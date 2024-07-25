@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  width: 300px;
+  padding: 40px;
+  background: #ffffff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.login-box h2 {
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: normal;
+}
+
+.user-box {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  background: transparent;
+}
+
+.user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #aaa;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.user-box input:focus ~ label,
+.user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #333;
+  font-size: 12px;
+}
+
+.login-button {
+  display: inline-block;
+  width: 120px;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #555;
+}
+
+.message {
+  display: none;
+  padding: 15px;
+
+  margin: 20px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  transition: opacity 0.5s ease;
+}
+.success {
+  background-color: #4caf50;
+  color: white;
+}
+.error {
+  background-color: #f44336;
+  color: white;
+}
+
+.goHome {
+  display: block;
+  width: 120px;
+  margin-top: 10px;
+  margin: auto;
+  padding: 10px 20px;
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.goHome:hover {
+  background: #4caf50;
+}
