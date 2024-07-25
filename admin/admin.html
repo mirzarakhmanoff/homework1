@@ -19,7 +19,7 @@
       align-items: center;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 1rem;
+      gap: 2rem;
       margin: auto;
     }
     .item {
@@ -28,6 +28,43 @@
     }
     .item img {
       width: 100%;
+    }
+
+    .user-card {
+      width: 300px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+      margin: 20px auto;
+      background-color: #fff;
+    }
+
+    .user-card:hover {
+      transform: scale(1.05);
+    }
+
+    .user-image img {
+      width: 100%;
+      height: auto;
+    }
+
+    .user-info {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .user-name {
+      font-size: 1.5em;
+      margin: 0;
+      color: #333;
+    }
+
+    .user-description {
+      font-size: 1em;
+      color: #777;
+      margin-top: 10px;
     }
   </style>
   <body>

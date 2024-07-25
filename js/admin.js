@@ -29,9 +29,21 @@ function createItem(items) {
     let item = document.createElement("div");
     item.classList.add("item");
     item.innerHTML = `
-    <img src=${element.image} alt="" />
-    <h3>${element.firstName}</h3>
-    <p>${element.lastName}</p>
+   
+
+
+
+    <div class="user-card">
+    <div class="user-image">
+      <img src=${element.image}  />
+    </div>
+    <div class="user-info">
+      <h3 class="user-name">${element.firstName}</h3>
+      <p class="user-description">
+      ${element.lastName}
+      </p>
+    </div>
+  </div>
     `;
     wrapper.append(item);
   });
